@@ -1,0 +1,33 @@
+<!doctype html>
+<head>
+  <title>Connect 4</title>
+  <link href="connect4.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Connect Four OO</h1>
+  <p>Each player selects a color, if you select the same color a different color will be
+    assigned to the second player to choose. Take turns dropping your color into the grid. 
+    The first player to get 4 in a row, horizonatlly, vertically, or diagonally, wins. 
+    To reset the gameboard click on the Start/Reset Game button.
+  </p>
+  <div class="player-select">
+    <div class="players">
+      <label for="p1-color">Player 1 Chosen Color:</label>
+      <select id="p1-color"></select>
+    </div>
+
+    <div class="players">
+      <label for="p2-color">Player 2 Chosen Color:</label>
+      <select id="p2-color"></select>
+    </div>
+  </div>
+  <button id="start-game">Start/Reset Game!</button>
+
+<div id="game">
+  <table id="board" class="center"></table>
+</div>
+
+<script src="connect4.js"></script>
+
+</body>
+</html>

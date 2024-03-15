@@ -1,0 +1,79 @@
+body{
+  background-color: hsl(238,86%, 63%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+
+p{
+  text-align: center;
+  color: white;
+  font-size: 1em;
+  width: 60%;
+}
+
+label{
+  color: white;
+}
+
+.player-select{
+  display: flex;
+  align-items: center;
+  align-content: space-around;
+  margin: 1em;
+}
+
+.players{
+  margin-right: 3em;
+  margin-left: 3em;
+}
+
+#p1-color, #p2-color{
+  padding: 0.25em;
+  margin: 0.5em;
+  background-color: white;
+  color: hsl(238,86%,63%);
+}
+
+/* game board table */
+.center{
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+}
+
+#board td {
+  width: 50px;
+  height: 50px;
+  border: solid 1px #666;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: grey;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+}
